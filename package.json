@@ -1,0 +1,47 @@
+{
+	"name": "gulp-rx",
+	"version": "0.1.0",
+	"description": "A rxjs based vinyl stream wrapper aimed at gulp.",
+	"main": "index.js",
+	"typings": "index.d.ts",
+	"scripts": {
+		"test": "mocha",
+		"build": "gulp build"
+	},
+	"keywords": [
+		"gulp",
+		"rx",
+		"rxjs",
+		"stream",
+		"vinyl",
+		"reactive"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jonatannyberg/gulp-rx.git"
+	},
+	"author": {
+		"name": "Jonatan Nyberg",
+		"email": "code@jonatannyberg.com"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@types/through2": "^2.0.33",
+		"glob-watcher": "^3.2.0",
+		"rxjs": "^5.4.0",
+		"through2": "^2.0.3",
+		"vinyl": "^2.0.2"
+	},
+	"devDependencies": {
+		"@types/assert": "0.0.31",
+		"@types/mocha": "^2.2.41",
+		"@types/vinyl": "^2.0.0",
+		"@types/vinyl-fs": "^2.4.5",
+		"gulp": "github:gulpjs/gulp#4.0",
+		"gulp-typescript": "^3.1.7",
+		"merge2": "^1.0.3",
+		"mocha": "^3.4.2",
+		"typescript": "^2.3.3",
+		"vinyl-fs": "^2.4.4"
+	}
+}

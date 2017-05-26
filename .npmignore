@@ -1,0 +1,15 @@
+
+node_modules
+test
+src
+gulpfile.js
+tsconfig.json
+*.log
+npm-debug.log*
+
+.npm
+
+.DS_Store
+Thumbs.db
+
+.vscode
