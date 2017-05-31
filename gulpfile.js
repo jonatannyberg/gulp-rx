@@ -20,6 +20,9 @@ const tsTest = typescript.createProject('test/tsconfig.json');
 gulp.task(`build-test`, () =>
 	Observable
 		.fromVinylStream(tsTest.src())
+		.map(file => {
+			file.contents
+		})
 		.pipe(tsTest())
 		.write('./test'));
 
@@ -35,10 +38,9 @@ gulp.task('watch', () => {
 			.task('build'),
 
 		streams[1]
-			.do(file => console.log(`File ${file.path} changed! Runninb build-test`))
+			.do(file => console.log(`File ${file.path} changed! Running build-test`))
 			.task('build-test'));
 });
 
 //gulp.task('watch', () => gulp.watch('src/**/*.ts', { delay: 100 }, gulp.series('build')));
 gulp.task('watch-test', () => gulp.watch(['test/**/*.ts', '!test/**/*.d.ts'], { delay: 100 }, gulp.series('build-test')));
-
