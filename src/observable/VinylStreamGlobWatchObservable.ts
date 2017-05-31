@@ -6,7 +6,6 @@ import { Subscriber } from 'rxjs/Subscriber';
 import { TeardownLogic } from 'rxjs/Subscription';
 
 import * as Vinyl from 'vinyl';
-import * as vfs from 'vinyl-fs';
 import * as fs from 'fs';
 const watch = require('glob-watcher');
 

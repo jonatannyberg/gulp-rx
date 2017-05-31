@@ -7,3 +7,5 @@ require("./add/observable/fromGlobWatch");
 /* observable operators */
 require("./add/operator/toVinylStream");
 require("./add/operator/pipe");
+require("./add/operator/write");
+require("./add/operator/task");

@@ -1,11 +1,11 @@
 
 import { Observable } from 'rxjs/Observable';
-import { pipe } from '../../operator/pipe';
+import { write } from '../../operator/write';
 
-Observable.prototype.pipe = pipe;
+Observable.prototype.write = write;
 
 declare module 'rxjs/Observable' {
 	interface Observable<T> {
-		pipe: typeof pipe;
+		write: typeof write;
 	}
 }

@@ -7,3 +7,5 @@ import './add/observable/fromGlobWatch';
 /* observable operators */
 import './add/operator/toVinylStream';
 import './add/operator/pipe';
+import './add/operator/write';
+import './add/operator/task';
